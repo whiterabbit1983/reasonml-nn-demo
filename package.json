@@ -1,0 +1,23 @@
+{
+  "name": "reason-nn",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^5.0.6"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^1.2.8",
+    "@tensorflow/tfjs-vis": "^1.1.0",
+    "mnist": "^1.1.0",
+    "synaptic": "^1.1.4"
+  }
+}
