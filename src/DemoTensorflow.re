@@ -71,6 +71,7 @@ let main = () => {
   )
   |> Js.Promise.then_(_ => {
        Js.log("Making test prediction...");
+       Utils.outBinaryPic(testXs_[0], 28, 28);
        let preds = model->predict(Tensor.make([|testXs_[0]|]));
        preds->Tensor.print;
        Tensor.make([|testYs_[0]|])->Tensor.print;

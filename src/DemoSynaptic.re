@@ -51,6 +51,7 @@ let main = (): unit => {
 
   // test network
   let testOutput = Synaptic.Network.(network->activate(testSet[0]->Mnist.get_input));
+  Utils.outBinaryPic(testSet[0]->Mnist.get_input, 28, 28);
   Js.log2("predicted output", testOutput);
   Js.log2("labeled output", testSet[0]->Mnist.get_output);
 };
